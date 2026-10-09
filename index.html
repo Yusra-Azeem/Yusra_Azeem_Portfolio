@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yusra Azeem | Software Engineer</title>
+  <meta name="description" content="Portfolio of Yusra Azeem, a software engineer building backend systems, web apps and AI-powered products with Node.js, React, PostgreSQL and Python.">
+  <meta name="theme-color" content="#08050f">
+  <meta property="og:title" content="Yusra Azeem | Software Engineer">
+  <meta property="og:description" content="Backend, web and AI projects by Yusra Azeem.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="net" aria-hidden="true"></canvas>
+
+  <header class="nav" id="top">
+    <a class="brand" href="#top" aria-label="Yusra Azeem, back to top">
+      <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1l2.6 8.4L23 12l-8.4 2.6L12 23l-2.6-8.4L1 12l8.4-2.6z" fill="currentColor"/></svg>
+      Yusra Azeem
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span>
+    </button>
+    <nav id="menu" class="menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact" class="btn btn-small sparkle">Contact me</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="hello">Hi, I'm Yusra</p>
+        <h1>I build web apps that think.</h1>
+        <p class="lead">
+          Software engineer and MCA student. I design secure backends, ship clean React interfaces
+          and add AI where it actually helps, from RAG memory to explainable ML models.
+        </p>
+        <div class="hero-actions">
+          <a class="btn sparkle" href="#projects">See my projects</a>
+          <a class="btn btn-ghost sparkle" href="assets/Yusra_Azeem_Resume.pdf" download>Download resume</a>
+        </div>
+        <p class="roles" aria-live="polite"><span id="role">Backend developer</span><span class="caret" aria-hidden="true"></span></p>
+      </div>
+
+      <figure class="code-card" aria-label="A short code snippet describing Yusra">
+        <div class="code-bar"><i></i><i></i><i></i><span>yusra.ts</span></div>
+<pre><code><span class="c">// what I work with</span>
+<span class="k">const</span> <span class="v">yusra</span> = {
+  <span class="p">role</span>: <span class="s">"Software Engineer"</span>,
+  <span class="p">backend</span>: [<span class="s">"Node.js"</span>, <span class="s">"Java"</span>, <span class="s">"PostgreSQL"</span>],
+  <span class="p">frontend</span>: [<span class="s">"React"</span>, <span class="s">"Next.js"</span>, <span class="s">"Tailwind"</span>],
+  <span class="p">ai</span>: [<span class="s">"RAG"</span>, <span class="s">"pgvector"</span>, <span class="s">"XGBoost"</span>],
+  <span class="p">dsa</span>: <span class="n">300</span>,
+  <span class="p">openTo</span>: <span class="s">"SDE roles"</span>,
+};</code></pre>
+      </figure>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About me</h2>
+      <div class="about-grid">
+        <div>
+          <p>
+            I'm a software engineer pursuing my MCA at Indira Gandhi Delhi Technical University for Women.
+            I like owning a feature from the first design sketch to deployment: building the APIs, testing them,
+            and making sure they run reliably in the cloud.
+          </p>
+          <p>
+            My work spans secure REST APIs, background automation, performance tuning and AI features.
+            I review my own code carefully and care about the small details that make software easy to maintain.
+          </p>
+        </div>
+        <ul class="facts">
+          <li><strong>300+</strong><span>DSA problems solved</span></li>
+          <li><strong>Top 250</strong><span>of 10,000+ at AIWOS Start-a-thon</span></li>
+          <li><strong>8.80</strong><span>CGPA in MCA</span></li>
+          <li><strong>6 merged</strong><span>open source pull requests</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul class="chips"><li>Java</li><li>Python</li><li>JavaScript</li><li>TypeScript</li><li>SQL</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Backend and APIs</h3>
+          <ul class="chips"><li>Node.js</li><li>Express.js</li><li>FastAPI</li><li>REST APIs</li><li>MVC</li><li>JWT</li><li>RBAC</li><li>Postman</li><li>pg_cron</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <ul class="chips"><li>React</li><li>Next.js</li><li>Redux</li><li>Tailwind CSS</li><li>HTML5</li><li>CSS3</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>AI and ML</h3>
+          <ul class="chips"><li>RAG</li><li>Vector embeddings</li><li>Scikit-learn</li><li>XGBoost</li><li>SHAP</li><li>Pandas</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Databases</h3>
+          <ul class="chips"><li>PostgreSQL</li><li>Supabase</li><li>MySQL</li><li>pgvector</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Cloud and tools</h3>
+          <ul class="chips"><li>AWS EC2</li><li>Render</li><li>Vercel</li><li>Git</li><li>GitHub</li></ul>
+        </div>
+      </div>
+      <p class="note">Core CS: data structures and algorithms, OOP, operating systems, computer networks and DBMS.</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <article class="project">
+          <header>
+            <h3>Algonest</h3>
+            <p class="meta">AI-powered EdTech platform, Jan to Jul 2026</p>
+          </header>
+          <p>
+            A platform for mentor-guided sessions, booking workflows, admin approvals and personalized learning roadmaps.
+            I owned the backend from design to deployment on Render.
+          </p>
+          <ul class="points">
+            <li>Secure REST APIs with MVC structure, JWT authentication and role-based access control.</li>
+            <li>A persistent RAG memory that summarizes student chats and retrieves context through pgvector similarity search.</li>
+            <li>Scheduled pg_cron jobs for availability rollovers, session reminders and expired-record cleanup.</li>
+          </ul>
+          <ul class="chips"><li>Node.js</li><li>Express</li><li>React</li><li>PostgreSQL</li><li>pgvector</li><li>Claude API</li><li>Zoom API</li></ul>
+          <div class="links">
+            <a class="btn btn-small sparkle" href="https://algonest-8pan.onrender.com/" target="_blank" rel="noopener">Live demo</a>
+            <a class="btn btn-small btn-ghost sparkle" href="https://github.com/Yusra-Azeem/algonest" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <header>
+            <h3>Exoplanet detection and habitability prediction</h3>
+            <p class="meta">Machine learning web app, Apr to Jun 2026</p>
+          </header>
+          <p>
+            A two-stage FastAPI and React app that first detects exoplanets, then predicts habitability,
+            using XGBoost models trained on 4,000+ records and deployed on Vercel.
+          </p>
+          <ul class="points">
+            <li>Handled class imbalance with SMOTETomek, reaching 100% recall and an F1-score of 0.846.</li>
+            <li>FastAPI inference endpoints for detection and conditional habitability prediction.</li>
+            <li>SHAP explanations that show which features drive each habitability prediction.</li>
+          </ul>
+          <ul class="chips"><li>FastAPI</li><li>React</li><li>XGBoost</li><li>Scikit-learn</li><li>SHAP</li><li>Pandas</li></ul>
+          <div class="links">
+            <a class="btn btn-small sparkle" href="https://exoplanet-iota.vercel.app/" target="_blank" rel="noopener">Live demo</a>
+            <a class="btn btn-small btn-ghost sparkle" href="https://github.com/Yusra-Azeem/exoplanet" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience and education -->
+    <section id="experience" class="section">
+      <h2>Experience and education</h2>
+      <ol class="timeline">
+        <li>
+          <p class="when">Jan 2026 to Jul 2026</p>
+          <h3>Web development intern, Ransh Innovations</h3>
+          <p>
+            Migrated a production EdTech platform from Create React App to Next.js and TypeScript, built 4+ production modules
+            (Notes, Flashcards, About, Vocabulary), restyled components with Tailwind CSS and cut unnecessary re-renders
+            across 5+ components with useMemo, useCallback and React.memo.
+          </p>
+          <p><a class="text-link sparkle" href="https://www.engle.in/" target="_blank" rel="noopener">Visit the live platform</a></p>
+        </li>
+        <li>
+          <p class="when">2025 to 2027</p>
+          <h3>Master of Computer Applications, IGDTUW</h3>
+          <p>Indira Gandhi Delhi Technical University for Women, Delhi. CGPA 8.80. Rank 7 in the IGDTUW CET entrance test.</p>
+        </li>
+        <li>
+          <p class="when">2022 to 2025</p>
+          <h3>BSc in Computer Science, Mathematics and Physics</h3>
+          <p>University of Allahabad. CGPA 7.00. Ranked in the top 5% of the batch.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="section">
+      <h2>Achievements</h2>
+      <ul class="achievements">
+        <li>
+          <strong>300+ DSA problems solved</strong>
+          <span>Across LeetCode and other platforms, covering graphs, trees, dynamic programming and binary search.</span>
+          <a class="text-link sparkle" href="https://leetcode.com/u/Yusra_Azeem/" target="_blank" rel="noopener">View LeetCode profile</a>
+        </li>
+        <li>
+          <strong>Open source contributor at Snowscript</strong>
+          <span>7 pull requests across multiple repositories, 6 merged after code review and feedback.</span>
+          <a class="text-link sparkle" href="https://drive.google.com/file/d/1dWQdDt7S7Kmr1_o-kB-pyGrC8OIFL76n/view?usp=drive_link" target="_blank" rel="noopener">View certificate</a>
+        </li>
+        <li>
+          <strong>AIWOS Start-a-thon, Top 250</strong>
+          <span>Ranked in the top 250 out of 10,000+ participants nationwide.</span>
+          <a class="text-link sparkle" href="https://drive.google.com/file/d/1Dqe9oMMMztZsFeMNnzYLvc3r90QB8JGa/view?usp=drive_link" target="_blank" rel="noopener">View certificate</a>
+        </li>
+        <li>
+          <strong>Rank 7 in the IGDTUW CET entrance test</strong>
+          <span>Secured admission to the MCA program with a top-10 rank.</span>
+        </li>
+        <li>
+          <strong>Top 5% of the BSc batch</strong>
+          <span>University of Allahabad, 2025.</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <h2>Let's build something</h2>
+      <p>I'm open to SDE roles and interesting projects. The quickest way to reach me is email.</p>
+      <div class="hero-actions">
+        <a class="btn sparkle" href="mailto:yuzhere55@gmail.com">Email me</a>
+        <a class="btn btn-ghost sparkle" href="https://www.linkedin.com/in/yusraazeem55" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost sparkle" href="https://github.com/Yusra-Azeem" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost sparkle" href="https://leetcode.com/u/Yusra_Azeem/" target="_blank" rel="noopener">LeetCode</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Designed and built by Yusra Azeem</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
